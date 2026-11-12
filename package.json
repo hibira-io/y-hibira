@@ -1,6 +1,6 @@
 {
   "name": "y-hibira",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yjs provider for Hibira Realtime, pusher-js and Laravel Echo: shared documents and awareness over private or presence channels, with no extra server",
   "keywords": [
     "yjs",
