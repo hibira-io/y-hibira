@@ -1,0 +1,76 @@
+{
+  "name": "y-hibira",
+  "version": "0.1.0",
+  "description": "Yjs provider for Hibira Realtime, pusher-js and Laravel Echo: shared documents and awareness over private or presence channels, with no extra server",
+  "keywords": [
+    "yjs",
+    "y-provider",
+    "crdt",
+    "collaboration",
+    "collaborative-editing",
+    "tiptap",
+    "blocknote",
+    "pusher",
+    "pusher-js",
+    "laravel-echo",
+    "websocket",
+    "realtime",
+    "hibira"
+  ],
+  "homepage": "https://hibira.io",
+  "bugs": {
+    "url": "https://github.com/hibira-io/y-hibira/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hibira-io/y-hibira.git"
+  },
+  "license": "MIT",
+  "author": "Hibira (https://hibira.io)",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:e2e": "node --test test/e2e/*.e2e.mjs"
+  },
+  "dependencies": {
+    "lib0": "^0.2.99",
+    "y-protocols": "^1.0.6"
+  },
+  "peerDependencies": {
+    "pusher-js": ">=7",
+    "yjs": "^13.6.0"
+  },
+  "peerDependenciesMeta": {
+    "pusher-js": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "pusher": "^5.3.4",
+    "pusher-js": "^8.6.0",
+    "yjs": "^13.6.33"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
