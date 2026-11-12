@@ -30,6 +30,7 @@ jobs:
             echo "release tag $GITHUB_REF_NAME does not match package.json version $version"; exit 1
           fi
           case "$version" in *-*) echo "dist_tag=next" >> "$GITHUB_OUTPUT" ;; *) echo "dist_tag=latest" >> "$GITHUB_OUTPUT" ;; esac
+      - run: npm ci
       - run: npm test
       - run: npm publish --provenance --access public --tag "${{ steps.version.outputs.dist_tag }}"
         env:
